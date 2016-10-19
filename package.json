@@ -1,0 +1,19 @@
+{
+  "name": "js-api",
+  "version": "1.0.0",
+  "description": "JavaScript/JSON objects to REST API in seconds.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soygul/js-api.git"
+  },
+  "author": "Teoman Soygul",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/soygul/js-api/issues"
+  },
+  "homepage": "https://github.com/soygul/js-api"
+}
