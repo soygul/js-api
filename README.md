@@ -3,11 +3,18 @@ Creates a REST API server from given JavaScript/JSON objects. Uses [Koa](https:/
 
 ## Example
 ```javascript
-const jsapi = require('js-api')
+var jsapi = require('js-api'); // this is a regular Koa app
+var data = {posts: [{id: 1, title: 'first post', body: 'lorem ip sum'}]};
 
-const data = {posts: [{id: 1, title: 'first post', body: 'lorem ip sum'}]}
+// define custom Koa middleware/routes if necessary
+jsapi.use(function *(next){
+  var start = new Date;
+  yield next;
+  var ms = new Date - start;
+  console.log('%s %s - %s', this.method, this.url, ms);
+});
 
-jsapi.start(data)
+jsapi.listen(data, 3000);
 ```
 
 ## License
