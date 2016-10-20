@@ -4,7 +4,7 @@
   "description": "JavaScript/JSON objects to REST API in seconds.",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "start": "node example.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/soygul/js-api/issues"
   },
-  "homepage": "https://github.com/soygul/js-api"
+  "homepage": "https://github.com/soygul/js-api",
+  "dependencies": {
+    "koa": "1.2.4",
+    "koa-bodyparser": "2.2.0",
+    "koa-cors": "0.0.16",
+    "koa-logger": "1.3.0",
+    "koa-route": "2.4.2",
+    "lodash": "4.16.4"
+  }
 }
