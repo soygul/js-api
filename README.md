@@ -3,6 +3,9 @@ Creates a REST API server from given JavaScript/JSON objects.
 Uses [Koa](https://github.com/koajs/koa) for the REST API.
 
 ## Quickstart
+```bash
+npm install js-api
+```
 
 ```javascript
 var jsapi = require('js-api');
