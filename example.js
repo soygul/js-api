@@ -1,4 +1,4 @@
-var jsapi = require('./app'); // this is a regular Koa app
+var jsapi = require('./index'); // this is a regular Koa app
 
 var data = {
   posts: [
