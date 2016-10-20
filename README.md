@@ -1,6 +1,7 @@
 # js-api
 Creates a REST API server from given JavaScript/JSON objects.
 Uses [Koa](https://github.com/koajs/koa) for the REST API.
+Extendable with custom routes and middleware.
 
 ## Quickstart
 Install the package:
