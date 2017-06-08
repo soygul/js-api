@@ -28,6 +28,7 @@ See [example.js](example.js) for a complete example with custom middleware and c
 You can download the entire repo and start the example directly with:
 
 ```bash
+npm install
 npm start
 ```
 
