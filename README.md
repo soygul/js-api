@@ -10,7 +10,7 @@ Install the package in your project directory:
 npm install js-api
 ```
 
-Start js-api server:
+Start js-api server with some data:
 
 ```javascript
 var jsapi = require('js-api');
