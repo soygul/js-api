@@ -4,7 +4,7 @@ Uses [Koa](https://github.com/koajs/koa) for the REST API.
 Extendable with custom routes and middleware.
 
 ## Quickstart
-Install the package in your project dir:
+Install the package in your project directory:
 
 ```bash
 npm install js-api
