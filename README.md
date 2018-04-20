@@ -15,7 +15,7 @@ Start js-api server with some data:
 ```javascript
 var jsapi = require('js-api');
 
-var data = {posts: [{id: 'p1', title: 'first post', body: 'lorem ip sum'}]};
+var data = {posts: [{id: 'p1', title: 'first post', body: 'lorem ipsum'}]};
 
 jsapi.start(data, 3000);
 ```
