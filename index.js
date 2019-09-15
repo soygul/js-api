@@ -10,7 +10,6 @@ var koa = require('koa'),
     logger = require('koa-logger'),
     cors = require('koa-cors'),
     bodyParser = require('koa-bodyparser'),
-    _ = require('lodash'),
     crud = require('./crud');
 
 // Koa config
@@ -30,9 +29,7 @@ app.start = function (data, port) {
   data = data || {};
 
   // mount all resources defined in data as a generic crud route
-  _.forOwn(data, function(resource, key) {
-    crud.init(app, resource, resource.route || key);
-  });
+  Object.keys(data).forEach(key => crud.init(app, data[key], data[key] || key));
 
   app.listen(port)
 
