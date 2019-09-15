@@ -25,6 +25,8 @@ jsapi.start(data, 3000);
 
 // ########### Below is the testing part for the above server definition ############ //
 
+console.log('Running example tests:')
+
 var request = require('request');
 var uri = 'http://localhost:3000/'
 
