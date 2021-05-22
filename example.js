@@ -7,7 +7,11 @@ var data = {
   ],
   users: [
     {id: 'u1', name: 'Chuck'}
-  ]
+  ],
+  home: {
+    title: 'My Title',
+    content: 'Lorem ipsum.'
+  }
 };
 
 // define custom API route for 'users'
@@ -48,4 +52,8 @@ request({url: uri + 'posts/p1', method: 'PUT', json: {id:'p1', title: 'first pos
 
 request({url: uri + 'posts', json: true}, function (error, response, body) {
   console.log('all posts:', body)
+})
+
+request({url: uri + 'home', json: true}, function (error, response, body) {
+  console.log('home page:', body)
 })

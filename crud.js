@@ -13,6 +13,15 @@ var route = require('koa-route'),
 exports.init = function (app, resource, routeName) {
   routeName = '/' + routeName
 
+  // handle non-array objects
+  if (!Array.isArray(resource)) {
+    app.use(route.get(routeName, function *() {
+      this.body = resource
+    }));
+
+    return;
+  }
+
   // list all items filtered by query (if any)
   app.use(route.get(routeName, function *() {
     this.body = _.filter(resource, this.query)
