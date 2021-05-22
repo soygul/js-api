@@ -1,6 +1,6 @@
 {
   "name": "js-api",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "JavaScript/JSON objects to REST API in seconds.",
   "main": "index.js",
   "scripts": {
